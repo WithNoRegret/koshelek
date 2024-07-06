@@ -1,0 +1,44 @@
+.converter-wrapper {
+  height: 90vh;
+  width: 90vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border: 1px solid black;
+
+  padding: 16px;
+}
+
+.converter {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.converter__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.converter__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.converter__rate {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+@media screen and (max-width: 991px) {
+  .converter {
+    flex-direction: column;
+  }
+}
